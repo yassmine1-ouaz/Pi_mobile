@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="AjouterOeuvre" cloudDestinationProperty="AjouterOeuvre" layout="BoxLayout" boxLayoutAxis="Y" >
+  <component type="TextField" name="titre" cloudBoundProperty="text" cloudDestinationProperty="titre" text="" hint="Titre" >
+  </component>
+  <component type="TextField" name="nom" cloudBoundProperty="text" cloudDestinationProperty="nom" text="" hint="Nom" >
+  </component>
+  <component type="Label" name="famille" cloudDestinationProperty="famille" text="Famille" >
+  </component>
+  <component type="CheckBox" name="art_visuel" cloudDestinationProperty="art_visuel" text="Art_visuel" >
+  </component>
+  <component type="CheckBox" name="art_contemporain" cloudDestinationProperty="art_contemporain" text="Art_contemporain" >
+  </component>
+  <component type="TextField" name="prix" cloudBoundProperty="text" cloudDestinationProperty="prix" text="" hint="prix" >
+  </component>
+  <component type="Label" name="etat" cloudDestinationProperty="etat" text="Etat" >
+  </component>
+  <component type="CheckBox" name="en_pret" cloudDestinationProperty="en_pret" text="En_pret" >
+  </component>
+  <component type="CheckBox" name="non_dispo" cloudDestinationProperty="non_dispo" text="Non_dispo" >
+  </component>
+  <component type="Button" name="ajouter" cloudDestinationProperty="ajouter" text="Ajouter" >
+  </component>
+</component>
