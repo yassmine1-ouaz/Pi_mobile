@@ -1,6 +1,7 @@
 package com.mycompany.myapp;
 
 import GUI.AjouterOeuvre;
+import GUI.HomeCate;
 import GUI.Listoeuvre;
 import static com.codename1.ui.CN.*;
 import com.codename1.io.Log;
@@ -66,7 +67,7 @@ public class MyApplication {
         }
         
         /////
-        // UIBuilder uIBuilder =new UIBuilder();
+        //UIBuilder uIBuilder =new UIBuilder();
       
       
        /* Container c =uIBuilder.createContainer(theme, "AjouterOeuvre");
@@ -155,7 +156,10 @@ public class MyApplication {
             }
         }).schedule(2200, true, hi);
         hi.show();*/
-     new AjouterOeuvre(theme).show();
+        Listoeuvre list = new Listoeuvre();
+        list.showEvenementList();
+       // new HomeCate().show();
+    // new AjouterOeuvre(theme).show();
     // new Listoeuvre(theme).show();
     }
 
