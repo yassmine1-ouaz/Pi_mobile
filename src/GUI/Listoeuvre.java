@@ -67,7 +67,7 @@ import java.util.ArrayList;
             // Create buttons to edit and delete the oeuvre
             Button editBtn = new Button("Modifier");
             editBtn.addActionListener(e -> {
-               // new Editoeuvre(oeuvre).show();
+                new editOeuvre(oeuvre).show();
                 oeuvreContainer.removeComponent(oeuvreRow);
             });
 

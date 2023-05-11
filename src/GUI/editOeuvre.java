@@ -11,9 +11,13 @@ import Entity.Oeuvre;
  *
  * @author octanet
  */
-public class Editoeuvre {
+public class editOeuvre {
 
-    public Editoeuvre(Oeuvre oeuvre) {
+    public editOeuvre(Oeuvre oeuvre) {
+    }
+
+    void show() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
