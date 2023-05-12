@@ -22,16 +22,16 @@ public class HomeCate extends Form{
         setLayout(BoxLayout.y());
         add(new Label("choisir"));
         
-        Button btnAjouter = new Button("Ajouter categorie");
-        Button btnShow = new Button("Show categorie");
-        Button btnList = new Button("List categorie");
+        Button btnAjouter = new Button("Ajouter oeuvre");
+    
+        Button btnList = new Button("List des oeuvres");
         
-        btnShow.addActionListener((evt) -> {});
         btnAjouter.addActionListener((evt) -> {});
+         btnList.addActionListener((evt) -> {});
 
        // add(btnAjouter);
         // add(btnShow);
-        addAll(btnAjouter,btnShow);
+        addAll(btnAjouter,btnList);
     }
     
 }

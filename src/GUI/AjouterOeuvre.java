@@ -107,9 +107,15 @@ TextField famille = new TextField("", "famille", 20, TextField.ANY);
     private final TextField titreOeuvreField, artisteField, prixOeuvreField, imageField, familleField, etatField;
     private final Button ajouterBtn;
 
-    public AjouterOeuvre(Resources res) {
+    public AjouterOeuvre() {
         super("Ajouter une oeuvre", BoxLayout.y());
 
+        
+          getToolbar().addMaterialCommandToRightBar("Go Back", FontImage.MATERIAL_REMOVE,
+                e -> {
+                    new Listoeuvre().show();
+                });
+          
           // Create text fields and a combo box for the oeuv
         titreOeuvreField = new TextField("", "Titre de l'oeuvre");
          titreOeuvreField.getStyle().setFgColor(154245);
@@ -156,7 +162,7 @@ TextField famille = new TextField("", "famille", 20, TextField.ANY);
             oeuvre.setEtat(etatField.getText());
 
             ServiceOeuvre.getInstance().ajoutOeuvre(oeuvre);
-              // new CvListForm().show();
+              new Listoeuvre().show();
              } catch (NumberFormatException ex) {
                 // Handle the case where the entered values are not valid numbers
                 Dialog.show("Error", "Please enter valid inputs", "OK", null);
@@ -167,11 +173,12 @@ TextField famille = new TextField("", "famille", 20, TextField.ANY);
 
         addAll(titreOeuvreField, artisteField, prixOeuvreField, imageField, familleField, etatField, ajouterBtn);
     }
-
-    AjouterOeuvre() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
+     public void showAdd() {
+ AjouterOeuvre form = new AjouterOeuvre();
+  form.show();
+}    
+
     
      
 }
